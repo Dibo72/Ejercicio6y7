@@ -20,7 +20,12 @@ public class Persona {
     }
 
     public void setEdad(int edad) {
-        this.edad = edad;
+        if (edad < 0){
+            System.out.println("Se necesita un valor positivo");
+        }else{
+            this.edad = edad;
+        }
+
     }
 
     public void saludar(){
